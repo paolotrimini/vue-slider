@@ -3,15 +3,33 @@
 // in automatico (cambio ogni 3sec).
 
 function initVue() {
+
     new Vue({
+
         el: '#app',
         data: {
 
         },
+
         methods: {
 
-        }
+            // img successiva
+
+
+            // img precedente
+
+
+            // BONUS: autoplay 3 secondi
+
+
+        },
+
+             // funzione autoplay
+
+
     });
+
+
 }
 
 
