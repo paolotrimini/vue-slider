@@ -13,9 +13,13 @@
 }
 
 .box-slider {
-    width: 700px;
+    width: 800px;
     height: 500px;
     display:flex;
+}
+
+.box-slider .prev, .next {
+    font-size: 30px;
 }
 
 .box-slider .slider {
@@ -33,11 +37,11 @@
 }
 
 .box-slider .prev {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .box-slider .next {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .box-slider .slider {
@@ -51,10 +55,12 @@
     transform: translateX(-50%)
 }
 
+.slider i {
+    padding: 0 3px;
+}
 
-/* colore quando l'img è attiva */
+/* colore "points" quando l'img è attiva */
 
 .active {
     color: darkorange;
-
 }
