@@ -22,10 +22,10 @@
                 <i class="fas fa-arrow-circle-left" @click="prevImg"></i>
             </div>
             <div class="slider">
-                <img :src="imgs[img_corr]" alt="">
+                <img :src="imgs[imgCorr]" alt="">
                 <div class="points">
                     <!-- punti slide -->
-                    <i class="fas fa-circle" v-for="(points, index_corr) in imgs" :class="index_corr === img_corr ? 'active' : ''"></i>
+                    <i class="fas fa-circle" v-for="(points, index_corr) in imgs" :class="index_corr === imgCorr ? 'active' : ''"></i>
                 </div>
             </div>
             <div class="next">

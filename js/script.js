@@ -8,7 +8,7 @@ function initVue() {
 
         el: '#app',
         data: {
-            img_corr : 0,
+            imgCorr : 0,
             timer: 0,
             imgs : [
 
@@ -23,17 +23,17 @@ function initVue() {
 
             // img precedente
             prevImg: function() {
-                this.img_corr--;
-                if(this.img_corr < 0) {
-                    this.img_corr = this.imgs.length -1;
+                this.imgCorr--;
+                if(this.imgCorr < 0) {
+                    this.imgCorr = this.imgs.length -1;
                 }
             },
 
             // img successiva
             nextImg: function() {
-                this.img_corr++;
-                if(this.img_corr == this.imgs.length) {
-                    this.img_corr = 0;
+                this.imgCorr++;
+                if(this.imgCorr == this.imgs.length) {
+                    this.imgCorr = 0;
                 }
             },
 
