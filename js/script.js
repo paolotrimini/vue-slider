@@ -21,19 +21,19 @@ function initVue() {
 
         methods: {
 
-            // img successiva
-            next() {
-                this.img_corr += 1;
-                if(this.img_corr == this.imgs.length) {
-                    this.img_corr = 0;
+            // img precedente
+            prevImg: function() {
+                this.img_corr--;
+                if(this.img_corr < 0) {
+                    this.img_corr = this.imgs.length -1;
                 }
             },
 
-            // img precedente
-            prev() {
-                this.img_corr -= 1;
-                if(this.img_corr < 0) {
-                    this.img_corr = this.imgs.length -1;
+            // img successiva
+            nextImg: function() {
+                this.img_corr++;
+                if(this.img_corr == this.imgs.length) {
+                    this.img_corr = 0;
                 }
             },
 
@@ -41,7 +41,7 @@ function initVue() {
             play() {
                 let app = this;
                 this.timer = setInterval(function() {
-                    app.next();
+                    app.nextImg();
                 }, 3000);}
 
         },

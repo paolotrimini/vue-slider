@@ -19,17 +19,18 @@
         <div class="box-slider">
             <div class="prev">
                 <!-- freccia img prev -->
-                <i class="fas fa-arrow-left" @click="prev()"></i>
+                <i class="fas fa-arrow-circle-left" @click="prevImg"></i>
             </div>
             <div class="slider">
                 <img :src="imgs[img_corr]" alt="">
                 <div class="points">
+                    <!-- punti slide -->
                     <i class="fas fa-circle" v-for="(points, index_corr) in imgs" :class="index_corr === img_corr ? 'active' : ''"></i>
                 </div>
             </div>
             <div class="next">
                 <!-- freccia img next -->
-                <i class="fas fa-arrow-right" @click="next()"></i>
+                <i class="fas fa-arrow-circle-right" @click="nextImg"></i>
             </div>
         </div>
     </div>
