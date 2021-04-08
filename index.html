@@ -25,7 +25,7 @@
                 <img :src="imgs[imgCorr]" alt="">
                 <div class="points">
                     <!-- punti slide -->
-                    <i class="fas fa-circle" v-for="(points, index_corr) in imgs" :class="index_corr === imgCorr ? 'active' : ''"></i>
+                    <i class="fas fa-circle" v-for="(points, indexCorr) in imgs" :class="(indexCorr === imgCorr) ? 'active' : ''"></i>
                 </div>
             </div>
             <div class="next">

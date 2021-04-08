@@ -32,29 +32,22 @@ function initVue() {
             // img successiva
             nextImg: function() {
                 this.imgCorr++;
-                if(this.imgCorr == this.imgs.length) {
+                if(this.imgCorr === this.imgs.length) {
                     this.imgCorr = 0;
                 }
-            },
-
-            // BONUS: autoplay 3 secondi
-            play() {
-                let app = this;
-                this.timer = setInterval(function() {
-                    app.nextImg();
-                }, 3000);}
-
+            }
         },
 
-        // autoplay
-        created: function() {
-            this.play();
-        }
+        // BONUS: autoplay 3 secondi
 
+        mounted: function(){
+            setInterval(() => {
+                this.nextImg();
+            }, 3000);
+        }
     });
 
-
-}
+} // fine initVue
 
 function init() {
     initVue();
